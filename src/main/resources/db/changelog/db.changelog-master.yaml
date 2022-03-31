@@ -1,0 +1,12 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: taras_mylov
+      changes:
+        - sqlFile:
+            dbms: 'postgresql'
+            splitStatements: "true"
+            stripComments: "true"
+            relativeToChangelogFile: "false"
+            path: "/db/changelog/db.sql"
+            encoding: "utf8"
